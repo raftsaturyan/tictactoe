@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="friend.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VS your friend</title>
+</head>
+<body>
+
+    <div class="background">
+        <h2 class="ttt-header">PLAY TIC TAC TOE WITH YOUR FRIEND!</h2>
+      
+        <div class="ttt-left">
+          <aside id="info">
+            <p class="sub-header">P1 SCORE</p>
+            <div id="score">
+              <span id="p1-score"></span><button id="reset-1">Reset</button>
+            </div>
+          </aside>
+        </div>
+      
+        <div class="ttt-middle">
+          <div id="alerts">
+            <span class="px-win">Player 1 Wins!</span>
+            <span class="po-win">Player 2 Wins!</span>
+            <span class="draw">Another Round!?</span>
+          </div>
+      
+          <ul id ="board">
+            <li position="0,0"></li>
+            <li position="0,1"></li>
+            <li position="0,2"></li>
+      
+            <li position="1,0"></li>
+            <li position="1,1"></li>
+            <li position="1,2"></li>
+      
+            <li position="2,0"></li>
+            <li position="2,1"></li>
+            <li position="2,2"></li>
+          </ul>
+      
+          <aside id="info">
+            <p class="sub-header">WHO'S TURN</p>
+            <div id="player-turn" class="x">
+              <span class="x">Խաղացող 1 (X)</span>
+              <span class="o">Խաղացող 2 (O)</span>
+            </div>
+          </aside>
+      
+          <button id="restart">Վերսկսել խաղը</button><br>
+          <a class="go_home_page" href="main.html">Վերադառնալ գլխավոր մենյու</a>
+        </div>
+      
+        <div class="ttt-right">
+          <aside id="info">
+            <p class="sub-header">P2 SCORE</p>
+            <div id="score">
+              <span id="p2-score"></span> <button id="reset-2">Reset</button>
+            </div>
+          </aside>
+        </div>
+      </div>
+      <script src="friend.js"></script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+body {
+    text-align: center;
+    background: #565685;
+    color: black;
+  }
+  .ttt-left {
+    width: 20%;
+    margin: auto;
+    margin-left: 5%;
+    float: left;
+  }
+  
+  .ttt-middle {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 50px;
+    float: left;
+  }
+  
+  .ttt-right {
+    width: 20%;
+    margin: auto;
+    margin-right: 5%;
+    float: right;
+  }
+  
+  .ttt-header {
+    margin-bottom: 15px;
+    letter-spacing: 5px;
+    font-weight: 400;
+    color: white;
+  }
+  
+  #board {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  
+  #board > li {
+    list-style: none;
+    float: left;
+    overflow: hidden;
+    text-decoration:none;
+    width: 100px;
+    height: 100px;
+    background: #9eb1ff;
+    border: 1px solid #ccc;
+    border-right: 1px solid #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  #board > li.x {
+    font-size: 40px;
+    color: #b71c1c;
+  }
+  
+  #board > li.o {
+    font-size: 40px;
+    color: #37474f;
+  }
+  
+  #board > li:hover {
+    background: #e0e0e0;
+  }
+  
+  #board > li:active {
+    width: 100px;
+    height: 100px;
+    border: 0;
+  }
+  
+  #info {
+    text-align:center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  #player-turn > span,
+  #alerts > span {
+    display: none;
+    color: white;
+  }
+  
+  #score > span {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  #player-turn.x span.x,
+  #player-turn.o span.o,
+  #alerts.px-win > span.px-win,
+  #alerts.po-win > span.po-win,
+  #alerts.draw > span.draw {
+    display: block;
+    font-size: 18px;
+  }
+  
+  #alerts.px-win > span.px-win,
+  #alerts.po-win > span.po-win,
+  #alerts.draw > span.draw {
+    margin-top: 0;
+  }
+  
+  #player-turn.x span.x,
+  #player-turn.o span.o {
+    margin-top: 10px;
+  }
+  
+  #restart {
+    text-align: center;
+    border: none;
+    padding: 0.6em 1.2em;
+    background: #bdbdbd;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin: 3px 2px;
+    border-radius: 32px;
+  }
+  
+  #reset-1,
+  #reset-2 {
+    text-align: center;
+    border: none;
+    padding: 0.4em 0.6em;
+    background: #bdbdbd;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin: 3px 2px;
+    margin-left: 5px;
+    border-radius: 32px;
+  }
+  
+  #reset-1:hover,
+  #reset-2:hover,
+  #restart:hover {
+    color: #b71c1c;
+  }
+  
+  .sub-header {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    #board {
+      margin-bottom: 0;
+      height: 280px;
+      width: 255px;
+    }
+  
+    #board > li.x {
+      font-size: 30px;
+      color: #b71c1c;
+    }
+  
+    #board > li.o {
+      font-size: 30px;
+      color: #37474f;
+    }
+  
+    #board > li {
+      width: 85px;
+      height: 85px;
+    }
+  
+    #board > li:active {
+      width: 85px;
+      height: 85px;
+      border: 0;
+    }
+  
+    #info {
+      margin-top: 0;
+    }
+  
+    #restart {
+      margin-bottom: 15px;
+    }
+  }
+  
+  @media only screen and (max-width: 875px) {
+    .ttt-header {
+      font-size: 14px;
+    }
+  
+    #reset-1,
+    #reset-2,
+    #restart,
+    #player-turn.x span.x,
+    #player-turn.o span.o,
+    #alerts.px-win > span.px-win,
+    #alerts.po-win > span.po-win,
+    #alerts.draw > span.draw,
+    #score > span,
+    .sub-header {
+      font-size: 12px;
+    }
+  
+    .ttt-middle {
+      float: left;
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .ttt-right,
+    .ttt-left {
+      float: right;
+      width: 100%;
+      margin: auto;
+    }
+  }
+
+
+
+
+  .back_to_homepage{
+    font-size: 25px;
+    background-color: #262652;
+    color: white;
+    height: 35px;
+    width: 290px;
+  }
+  
+  
+  .a_back_to_homepage{
+   color: #b5b5b5;
+    text-decoration: none;
+  }
+  
+  .a_back_to_homepage:hover{
+    color: white;
+    transition: 1s;
+  }
+
+
+
+.go_home_page{
+    text-align: center;
+    border: none;
+    padding: 0.6em 1.2em;
+    background: #152e6b;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin: 3px 2px;
+    border-radius: 32px;
+    text-decoration: none;
+}
